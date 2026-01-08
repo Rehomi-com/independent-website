@@ -107,4 +107,62 @@ mkdir testA<br>
 
 
 *Upload the downloaded base and initial package<br>
+<img width="303" height="188" alt="image" src="https://github.com/user-attachments/assets/ad538cfc-5ac5-4349-92c5-fcd37b6ca2a1" />
 
+*Use scp to upload two files to the newly created folder.<br>
+To upload files to the server, open a new terminal window and enter the following command to upload files to the server:<br>
+scp filepath username@IP address:path/ <br>
+Replace <filepath> with the path to the file you want to upload. Ensure the path contains no Chinese characters. You can drag and drop the file directly into the terminal to resolve the path. To upload multiple files simultaneously, separate them with spaces.<br>
+username@IP address:path/ specifies your Linux instance's public IP and the destination directory.<br>
+Below is the input from the example. After pressing Enter, the files are uploaded to the specified directory.<br>
+
+<img width="953" height="124" alt="image" src="https://github.com/user-attachments/assets/b4f75ce6-75f7-407b-b1b8-a28bb5bfe0cf" />
+
+
+*Server window: Navigate to the newly created folder<br>
+Switch back to the previous terminal and enter the following command to change to the testA directory:<br>
+cd testA/<br>
+Then enter `ls` to view files in this path. You will find both the base deployment package and application deployment package have been successfully uploaded.<br>
+<img width="302" height="112" alt="image" src="https://github.com/user-attachments/assets/0b9a05db-d41e-450c-9741-cb37abc5c0ca" />
+
+
+
+*Set ivxbase as an executable file<br>
+Next, in this path, enter the following command to make ivxbase an executable file:<br>
+chmod +x ivxbase<br>
+When you use `ls` again, you will see ivxbase highlighted in green, indicating success.<br>
+<img width="338" height="82" alt="image" src="https://github.com/user-attachments/assets/3b97dc72-7c20-4b32-8f81-fbb351988fae" />
+
+<br>
+<h4>3、Initialize ivxbase</h4>
+
+
+
+*Run ivxbase,<br>
+Next, enter the following command in the current directory to run ivxbase:<br>
+./ivxbase<br>
+<img width="438" height="97" alt="image" src="https://github.com/user-attachments/assets/a3d074cf-e5e9-45f8-920f-23b5623968b0" />
+
+
+*Begin filling in configuration items. Note that these settings will be saved in the config file, so don't panic if you make a mistake—you can modify the configuration file later.<br>
+*Enter the port number. Note: Since you will configure Nginx or a load balancer later, avoid using port 80. Choose a different custom port, such as 9966.<br>
+<img width="477" height="87" alt="image" src="https://github.com/user-attachments/assets/3ff8573d-2fdc-4195-8dbe-bedd84ceffc8" />
+
+
+
+*Enter the Redis address and user. For single-machine deployment, use the locally installed Redis. Use all default options and press Enter.<br>
+<img width="480" height="199" alt="image" src="https://github.com/user-attachments/assets/f08d1c2d-f703-4de6-990b-10935f04a4ec" />
+
+
+
+*Enter the MySQL address, user, and password. For single-machine deployment, use the locally installed MySQL/MariaDB. Correctly enter the username and password. For the database, you can use the default `h5work` or specify your own. Enter any memorable English name.<br>
+<img width="889" height="95" alt="image" src="https://github.com/user-attachments/assets/3d182b30-02a4-498a-9592-15a35708b64a" />
+
+Note: This demo uses Alibaba Cloud RDS database. If using locally installed MySQL, leave the address field as default.<br>
+
+*After running the command, the application path will be printed in the command line, indicating successful deployment. You can now access the demo via IP address + port. Note: When customizing the path, the application will retain this custom path during export.<br>
+<img width="721" height="106" alt="image" src="https://github.com/user-attachments/assets/612b664b-a9c0-4275-bdbc-ad9fcd1dd779" />
+
+Access the demo using `IP:port/path` (where `path` is the directory specified after `path:` upon successful import).<br>
+http://39.104.21.197:9966/play/n11fB3WO<br>
+Press `Ctrl+C` in the terminal to stop the demo process.<br>
