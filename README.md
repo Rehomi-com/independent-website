@@ -1,14 +1,14 @@
 <h2>Step 1: Download the base and deployment package for the project.</h2>
 Choose the corresponding base download based on server type, then download the full deployment package.<br><br>
 Linux base <br>
-x86  https://file3.ih5.cn/ivxbase/v2.1.22/ivxbase <br>
-arm64  https://file3.ih5.cn/ivxbase/v2.1.22/ivxbase_arm64
+x86 Chip  https://drive.google.com/file/d/1hswscioUr4pJgtZIvWwr5cuTR1vlQx5n/view?usp=sharing <br>
+arm64 Chip  https://drive.google.com/file/d/1UlQjVExX149DWBFzuTteZQTMW_VGRVjx/view?usp=sharing
 <br><br>
 Mac base  <br>
-https://file3.ih5.cn/ivxbase/v2.1.22/ivxbase_mac
+https://drive.google.com/file/d/1QgaQly3bcy9Xp52H8K4r0-EtkOoyR72l/view?usp=sharing
 <br><br>
 Windows base  <br>
-https://file3.ih5.cn/ivxbase/v2.1.22/ivxbase.exe
+https://drive.google.com/file/d/1DhoMzZ_2NKgQlePckh0Uf3H2OlllLNYG/view?usp=sharing
 <br><br>
 <img width="225" height="229" alt="image" src="https://github.com/user-attachments/assets/b03ce5de-1553-4a62-9e02-d563fb68ba3d" />
 <br><br>
