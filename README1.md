@@ -1,3 +1,4 @@
+This independent website system employs a frontend-backend separation design. After deployment, you can view the project at https://rehomi.com/ with identical functionality. The complete feature structure is illustrated below:
 # Independent Website System Features
 
 ## PC Version
