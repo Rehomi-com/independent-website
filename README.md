@@ -1,3 +1,87 @@
+This independent website system employs a frontend-backend separation design. After deployment, you can view the project at https://rehomi.com/ with identical functionality. The complete feature structure is illustrated below:<br>
+# Independent Website System Features
+
+## PC Version
+- **Pages**
+  - Homepage
+  - Search
+  - Details Page
+  - Order Page
+  - Checkout
+- **Features**
+  - Email Subscription
+  - Inquiry System
+  - Customer Service System
+  - Shopping & Checkout
+  - Payment Gateways
+    - PayPal
+    - USDT
+    - T/T
+  - News System
+  - Coupons
+    - Store Coupons
+      - Verify if already claimed upon redemption
+    - Product Coupons
+  - SEO Enhancement: GEO Structure
+
+## Mobile Version
+- **Pages**
+  - Homepage
+  - Search
+  - Details Page
+  - Shopping Page
+  - Order Page
+  - Checkout
+  - My Account
+- **Features**
+  - Email Subscription
+  - Inquiry System
+  - Customer Service System
+  - Shopping & Checkout
+  - Payment Gateways
+    - PayPal
+    - USDT
+    - T/T
+  - News System
+  - Coupons
+  - Order Management
+  - Account Settings
+  - SEO Enhancement: GEO Structure
+
+## Backend (Admin)
+- **User PC**
+  - Shopping Cart
+  - Inquiry Management
+  - Subscription Management
+  - Order Management
+  - Review Management
+  - Coupons
+  - Account Settings
+- **Product Management**
+  - Publish Products
+  - Manage Products
+- **Add-to-Cart Management**
+- **Inquiry Management**
+- **Transaction Management**
+  - Subscription Management
+  - Review Management
+  - Order Management
+- **Company Information**
+- **Merchant Backend**
+  - Store Management
+    - Homepage Banners
+    - Staff Management
+    - ERP System
+  - News Management
+    - Article Management
+    - Category Management
+  - Marketing Management
+    - Coupons
+  - Customer Management
+  - Settings
+    - Account Settings
+
+<br><br>
 <h2>Step 1: Download the base and deployment package for the project.</h2>
 Choose the corresponding base download based on server type, then download the full deployment package.<br><br>
 Linux base <br>
