@@ -1,5 +1,5 @@
 <h2>Step 1: Download the base and deployment package for the project.</h2>
-<br><br>Choose the corresponding base download based on server type, then download the full deployment package.<br><br>
+Choose the corresponding base download based on server type, then download the full deployment package.<br><br>
 Linux base <br>
 x86  https://file3.ih5.cn/ivxbase/v2.1.22/ivxbase <br>
 arm64  https://file3.ih5.cn/ivxbase/v2.1.22/ivxbase_arm64
@@ -14,7 +14,6 @@ https://file3.ih5.cn/ivxbase/v2.1.22/ivxbase.exe
 <br><br>
 <h2>Step 2: Select the server</h2>
 
-<br><br>
 <h4>Deployment Server - Configuration Recommendations</h4>
     <table>
         <thead>
