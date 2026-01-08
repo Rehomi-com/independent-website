@@ -1,7 +1,7 @@
 This independent website system employs a frontend-backend separation design. After deployment, you can view the project at https://rehomi.com/ with identical functionality. The complete feature structure is illustrated below:
 
 <p align="center">
-  <a href="https://github.com/Rehomi-com/independent-website/blob/main/%E4%B8%AD%E6%96%87%E8%B5%84%E6%96%99.md">📖 中文</a> | <a href="https://github.com/Rehomi-com/independent-website/edit/main/README.md">📖 English</a>
+  <a href="https://github.com/Rehomi-com/independent-website/blob/main/%E4%B8%AD%E6%96%87%E8%B5%84%E6%96%99.md">📖 中文</a> | <a href="https://github.com/Rehomi-com/independent-website/blob/main/README.md">📖 English</a>
 </p>
 
 # Independent Website System Features
