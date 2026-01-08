@@ -64,4 +64,47 @@ https://drive.google.com/file/d/1DhoMzZ_2NKgQlePckh0Uf3H2OlllLNYG/view?usp=shari
     </table>
 <br><br>
 <h2>Step 3: Practical Deployment</h2>
-Before deployment, prepare a domain name (URL) for subsequent use.<br>
+Before deployment, prepare a domain name (URL) for subsequent use.<br><br>
+
+<h4>1、Installing MySQL and Redis</h4>
+
+MySQL and Redis are two underlying databases that the IVX application relies on for operation. For large-scale commercial applications, we strongly recommend using cloud-hosted MySQL and Redis services, such as Alibaba Cloud's RDS and Cloud Database Redis Edition. We will detail the integration methods in later sections. Here, considering convenience and deployment costs, we will install MySQL and Redis locally on the server. Note: MariaDB can be used as an alternative to MySQL, as both are essentially equivalent.
+
+Minimum software versions required:
+MySQL: 5.7.9
+Redis: 2.8
+
+On CentOS, both software packages can be installed directly using the yum command. If issues arise, search online for detailed installation steps.
+
+<h4>2、Create a directory and upload the program files</h4>
+
+
+*SSH into the server<br>
+We recommend using SSH to log into your Linux instance. Before logging in, you must know the server's administrator username and password.<br>
+In the terminal, enter and execute the following command to connect to the Linux server:<br>
+ssh username@hostname or IP address<br>
+username is the default account obtained in the prerequisites.<br>
+hostname or IP address is your Linux instance's public IP or custom domain name.<br>
+If your local computer runs Mac OS, first open the built-in Terminal app before executing the command.<br>
+If your local computer runs Linux, you can execute the command directly.<br>
+If your local computer runs Windows 10 or Windows Server 2019, first open Command Prompt (CMD) before executing the command.<br>
+Enter the obtained password and press Enter to complete the login.<br>
+<img width="510" height="287" alt="image" src="https://github.com/user-attachments/assets/14bec44c-bfc1-4c38-b918-ce8ad18670c9" />
+
+After successful login, you'll notice the terminal prefix changes from your desktop to the cloud server's name.<br>
+You can enter the following command to view files in the current directory:<br>
+ls<br>
+<img width="200" height="49" alt="image" src="https://github.com/user-attachments/assets/8518ddd2-de22-4797-9cbf-2fdf7ec94eeb" />
+
+Since this is a brand-new server, no files currently exist in this directory.<br>
+Linux reports errors but not successes; therefore, if no error is displayed, the command executed correctly.<br>
+
+
+*Create a new directory<br>
+For easier management, create a directory named `testA` in the current server path by entering the following command in the terminal:<br>
+mkdir testA<br>
+<img width="285" height="79" alt="image" src="https://github.com/user-attachments/assets/2c09a1f7-1932-4e21-8cdd-f8869e3e19ad" />
+
+
+*Upload the downloaded base and initial package<br>
+
