@@ -236,3 +236,80 @@ Access the demo using `IP:port/path` (where `path` is the directory specified af
 Example: `http://39.104.21.197:9966/play/n11fB3WO`
 
 Press `Ctrl+C` in the terminal to stop the demo process.
+
+
+
+# 4. Keep the Program Running in the Background
+
+## Navigate to Configuration Directory
+```bash
+cd /etc/systemd/system
+```
+
+## Create Configuration File
+```bash
+sudo vim ivxtest.service
+```
+- `ivxtest` is the filename, you can specify any memorable English name
+- After entering the vim editor, press `i` to enter insert mode (`INSERT` indicator will appear at bottom left)
+- Input the following content
+
+## Configuration File Content
+```ini
+[Unit]
+Description=Ivx test
+After=network.target redis.service mariadb.service
+# If using non-local redis/mysql/maria, only fill: After=network.target
+
+[Service]
+Type=simple
+User=celveta
+Group=celveta
+
+Restart=on-failure
+RestartSec=10
+
+WorkingDirectory=/home/celveta/ivxtest
+ExecStart=/home/celveta/ivxtest/ivxbase
+
+[Install]
+WantedBy=multi-user.target
+```
+
+**Note:**
+- Replace `User` and `Group` with your current username and group
+- `WorkingDirectory` is the application directory (where ivxbase program is located)
+- `ExecStart` is the full path to the application
+
+## Save Configuration File
+1. Press `Esc` key to exit insert mode
+2. Input `:wq` (in English input mode)
+3. Press `Enter` to save and exit
+
+## Service Management Commands
+
+### Reload Configuration
+```bash
+sudo systemctl daemon-reload
+```
+
+### Start Service
+```bash
+sudo systemctl start ivxtest
+```
+
+### Restart Service
+```bash
+sudo systemctl restart ivxtest
+# Execute after initial deployment of new cases
+```
+
+### Enable Auto-start on Boot
+```bash
+sudo systemctl enable ivxtest
+```
+
+### View Logs
+```bash
+sudo journalctl -u ivxtest -f
+```
